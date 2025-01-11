@@ -6,6 +6,7 @@ import Auth from "./components/Auth.tsx";
 import Login from "./components/signinPage/Login.tsx";
 
 function App() {
+
   return (
     <div className="background-container">
       <Routes>
@@ -19,7 +20,8 @@ function App() {
         </Route>
       </Routes>
     </div>
-  );
+      
+  )
 }
 
-export default App;
+export default App
