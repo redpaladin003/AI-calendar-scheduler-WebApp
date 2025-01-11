@@ -1,8 +1,12 @@
 
+const colorStyle ={
+    color: "black",
+}
 const SignIn = () => {
     return (
-        <form>
-            
-        </form>
+        <div><p style={colorStyle}>register</p></div>
+        
     )
 }
+
+export default SignIn;
