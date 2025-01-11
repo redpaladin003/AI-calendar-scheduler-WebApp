@@ -1,22 +1,16 @@
-import { Routes, Route } from "react-router";
-import "./App.css";
-import Home from "./pages/home.tsx";
+import { useState } from 'react'
+
+import './App.css'
+import Headline from './components/mainPage/Hero.tsx'
 
 function App() {
-  return (
-    <div className="background-container">
-      <Routes>
-        {/* Default route ("/") */}
-        <Route index element={<Home />} />
 
-        {/* Auth routes wrapped in Auth */}
-        <Route element={<Auth />}>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Route>
-      </Routes>
+  return (
+    <div className = "background-container">
+      <Headline />
     </div>
-  );
+      
+  )
 }
 
-export default App;
+export default App
